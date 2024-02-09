@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="end">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intial-scale=.0">
+    <title>online shoping</title>
+    <link rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <div class="kk" style="background-color: gray; text-align: center;text-decoration: blue;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="card.html">CARD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"aria-current="page" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+<div class="heder">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="online.png" height="700vh"width="100%" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="online1.webp" height="700vh"width="100%" class="d-block w-100" alt="...">
+          </div> 
+</div>
+</div>
+</div>
+<div class="mm" style="display: flex; background-color: blanchedalmond;">
+  <div class="zz" style="margin-top: 5%; margin-bottom: 5%; margin-left:3%;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55153.18197086077!2d74.85586166381837!3d30.23496980353519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391732fa15b3b51b%3A0x6d857c6c4cb95a53!2sGuru%20Nanak%20Dev%20Thermal%20Plant%2C%20Bathinda!5e0!3m2!1sen!2sin!4v1707457266909!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<div class="align="center style="margin-left:0%;margin-top:5%; margin-bottom: 5%;" >  
+  <h1>Place your order</h1>  
+  <table cellspacing="2" align="center" cellpadding="8" border="0">  
+  <tr><td> Name</td>   
+  <td><input type="number" placeholder="Enter your number" id="n1"></td></tr>  
+  <tr><td>Number </td>  
+  <td><input type="text" placeholder="Enter your phone number" id="e1"></td></tr>  
+  <tr><td> Set Password</td>  
+  <td><input type="password" placeholder="Set a password" id="p1"></td></tr>  
+  <tr><td>Confirm Password</td>  
+  <td><input type="password" placeholder="Confirm your password" id="p2"></td></tr>  
+  <tr><td>  
+  <input type="submit" value="submit" onClick="create_account()"/>  
+  </table>  
+  <script type="text/javascript">  
+  function create_account(){  
+  var n=document.getElementById("n1").value;  
+  var e=document.getElementById("e1").value;  
+  var p=document.getElementById("p1").value;  
+  var cp=document.getElementById("p2").value;  
+ 
+          var letters = /^[A-Za-z]+$/;  
+          var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;   
+  if(n==''||e==''||p==''||cp==''){  
+  alert("Enter each details correctly");  
+  }  
+  else if(!letters.test(n))  
+          {  
+              alert('Name is incorrect must contain alphabets only');  
+          }  
+  else if (!email_val.test(e))  
+          {  
+              alert('Invalid email format please enter valid email id');  
+          }  
+  else if(p!=cp)  
+  {  
+  alert("Passwords not matching");  
+  }  
+  else if(document.getElementById("p1").value.length > 12)  
+  {  
+  alert("Password maximum length is 12");  
+  }  
+  else if(document.getElementById("p1").value.length < 6)  
+  {  
+  alert("Password minimum length is 6");  
+  }  
+  else{  
+  alert("Your account has been created successfully... Redirecting to JavaTpoint.com");  
+  window.location="java.html";  
+  }  
+  }  
+  </script>  
+</div>
+</div>
+<div class="pp" style="background-color: black;height: 70%;width: 100%; text-align: center;color: white;">
+    <h1>contact</h1>
+    <h2>9998885522</h2>
+    <h2>shoping@gmail.com</h2>
+    <h6>companies and individual that buy and sell goods and service over the internet</h6>
+  <footer>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-google"></i>
+    <div class="oo">
+   <h5> No. 78/9, Outer Ring Road, Bellandur, Varthur Hobli, Bengaluru.</h5>
+    </div>
+  </footer>
+</div>
+  
+</body>
+</html>
